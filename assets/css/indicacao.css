@@ -1,0 +1,186 @@
+.recommendation__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.card__header {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #155724;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card__header p {
+    font-size: calc(14 / 16 * 1rem);
+    text-align: center;
+}
+
+.recommendation__button {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.recommendation__button button {
+    width: 100%;
+    padding: 10px 25px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card__recommendation {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status__left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.status__icon {
+    font-size: calc(16 /16 * 1rem);
+    padding: 10.5px 10px;
+    border-radius: 50%;
+}
+
+.status__icon.await {
+    color: #ffc107;
+    background-color: #fff1c9;
+}
+
+.status__text h3 {
+    font-size: calc(16 / 16 * 1rem);
+    margin-bottom: 5px;
+}
+
+.status__text p {
+    font-size: calc(14 / 16 * 1rem);
+    color: #606060;
+}
+
+.status__button button{
+    padding: 10px 15px;
+    background-color: #00204c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: calc(14 / 16 * 1rem);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    width: 96%;
+    max-width: 400px;
+    height: fit-content;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 9999;
+    padding: 16px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+}
+
+#backgroundCover {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9998;
+}
+
+.popup-header {
+    margin-top: 14px;
+    font-size: 80px;
+    color: orange
+}
+
+.popup-header-success {
+    margin-top: 14px;
+    font-size: 80px;
+    color: #155724;
+}
+
+.popup-content {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    color: #606060;
+}
+
+.buttonsFlex {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.buttonsFlex button {
+    flex: 1;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: calc(16 / 16 * 1rem);
+}
+
+#approveButton {
+    background-color: #77499a;
+    border: 1px solid #77499a;
+    color: #fff;
+}
+
+#denyButton {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+}
+
+#copyClose {
+    background-color: #155724;
+    border: 1px solid #155724;
+    color: #fff;
+    width: 100%;
+    margin-top: 14px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: calc(16 / 16 * 1rem);
+}

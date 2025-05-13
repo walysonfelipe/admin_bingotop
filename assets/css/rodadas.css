@@ -1,0 +1,387 @@
+.main__jogos__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.main__jogo {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.main__jogo__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondary-text {
+    font-size: calc(12 / 16 * 1rem);
+    font-weight: bold;
+    color: #606060;
+}
+
+.open {
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    color: #28a745;
+}
+
+.close {
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.inprogress {
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.main__jogo__mid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jogo__mid__text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.jogo__mid__text h2 {
+    text-transform: uppercase;
+}
+
+.jogo__mid__text h3 {
+    font-size: calc(16 / 16 * 1rem);
+    text-transform: uppercase;
+}
+
+.open__button {
+    padding: 10px 10.75px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: calc(20 / 16 * 1rem);
+}
+
+.close__button {
+    padding: 10px 14.5px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: calc(20 / 16 * 1rem);
+}
+
+.inprogress__button {
+    padding: 10px 12px;
+    background-color: #ffc107;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: calc(20 / 16 * 1rem);
+}
+
+.main__jogo__bot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prize {
+    flex: 1;
+    text-align: center;
+}
+
+.prize p {
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+}
+
+.prize p:first-child {
+    font-size: calc(14 / 16 * 1rem);
+}
+
+.popup__container {
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.popup__comprar__head,
+.popup__resultado__head {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.popup__comprar__head h3,
+.popup__resultado__head h3 {
+    font-size: calc(16 / 16 * 1rem);
+}
+
+.popup__comprar__head button,
+.popup__resultado__head button {
+    background: none;
+    border: none;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+}
+
+.popup__comprar__info {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    gap: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.popup__comprar__premios {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__comprar__bottom p {
+    color: #28a745;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.messagem-erro {
+    color: #ff0000 !important;
+}
+
+.popup__comprar__premio {
+    text-align: center;
+}
+
+.popup__comprar__quantidade {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.popup__comprar__quantidade button {
+    width: 100%;
+    padding: 5px;
+    background-color: #77499a;
+    border-radius: 5px;
+    border: none;
+    color: #ffc107;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+}
+
+.popup__comprar__input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup__input,
+.popup__button__comprar {
+    display: flex;
+    align-items: center;
+}
+
+.popup__input {
+    width: 40%;
+}
+
+.popup__button__comprar {
+    width: 60%;
+}
+
+.popup__input input,
+.popup__button__comprar input {
+    width: 100%;
+    padding: 5px;
+    font-size: calc(16 / 16 * 1rem);
+    text-align: center;
+    outline: none;
+    border: 1px solid #77499a;
+}
+
+.popup__input button {
+    width: 35px;
+    padding: 5px 10px;
+    font-size: calc(16 / 16 * 1rem);
+    background-color: #77499a;
+    border: 1px solid #77499a;
+    color: #ffc107;
+}
+
+.popup__button__comprar button {
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: calc(16 / 16 * 1rem);
+    background-color: #77499a;
+    border: 1px solid #77499a;
+    color: #ffc107;
+}
+
+.popup__confirmar__head,
+.popup__concluir__head {
+    font-size: calc(72 / 16 * 1rem);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup__confirmar__head {
+    color: #ffc107;
+}
+
+.popup__concluir__head {
+    color: #28a745;
+}
+
+.popup__confirmar__bottom p,
+.popup__concluir__bottom p {
+    font-size: calc(24 / 16 * 1rem);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup__concluir__buttons,
+.popup__confirmar__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup__confirmar__buttons button,
+.popup__concluir__buttons button {
+    width: 100%;
+    padding: 5px;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    color: #ffc107;
+    background-color: #77499a;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup__confirmar__buttons button:first-child {
+    background-color: #d3d3d3;
+    color: #606060;
+}
+
+.popup__resultado__container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.popup__resultado__jogo {
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.popup__resultado__grid {
+    width: 100%;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.popup__resultado__grid img {
+    width: 100%;
+}
+
+.popup__resultado__premio {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.resultado__premio__esquerda h3 {
+    font-size: calc(16 / 16 * 1rem);
+    color: #3c016a;
+    margin-bottom: 5px;
+}
+
+.resultado__premio__esquerda p {
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+}
+
+.resultado__premio__direita p {
+    font-size: calc(24 / 16 * 1rem);
+    font-weight: bold;
+    color: #28a745;
+}
+
+.popup__resultado_button {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.popup__resultado_button button {
+    width: 100%;
+    padding: 5px;
+    font-size: calc(16 / 16 * 1rem);
+    font-weight: bold;
+    color: #ffc107;
+    background-color: #77499a;
+    border: none;
+    border-radius: 5px;
+}
