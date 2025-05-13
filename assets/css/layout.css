@@ -168,7 +168,8 @@ main {
     min-height: calc(100vh - 60px);
     height: 100%;
     padding: 20px;
-    background-color: #121212;
+   /* background: linear-gradient(135deg, #0A0A0A 0%, #2C0000 40%, #5A1B00 70%, #E3001B 100%); */
+   background: radial-gradient(circle at top left, #2C0000, #0A0A0A);
     background-size: cover;
     background-position: center;
 }

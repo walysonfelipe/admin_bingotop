@@ -34,7 +34,7 @@ include_once 'php/functions.php';
         </div>
         <div class="login__container">
             <div class="logo">
-                <img src="assets/images/Logo_Bingo_Transp.png" alt="">
+                <img src="assets/images/Logo.png" alt="">
             </div>
             <div class="login">
                 <h1>Entrar</h1>
