@@ -19,12 +19,14 @@ function renderSidebarNavigation()
                     <span class="tooltip">Saques (EzzeBank)</span>
                 </li>
             <?php endif; ?>
-            <?php if (isset($_COOKIE['privileges']) && $_COOKIE['privileges'] == 2): ?>
+            <!-- <?php //if (isset($_COOKIE['privileges']) && $_COOKIE['privileges'] == 2): 
+                    ?>
                 <li onclick="window.location.href='Saque.php'">
                     <i class="fa-solid fa-money-bill-transfer"></i>
                     <span class="tooltip">Saques (SuitPay)</span>
                 </li>
-            <?php endif; ?>
+            <?php //endif; 
+            ?> -->
             <li onclick="window.location.href='winners.php'">
                 <i class="fa-solid fa-trophy"></i>
                 <span class="tooltip">Ganhadores</span>

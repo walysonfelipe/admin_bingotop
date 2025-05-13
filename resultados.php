@@ -29,8 +29,8 @@ while ($row = $result->fetch_assoc()) {
 
 // Query para novos usuários cadastrados por dia
 $sqlUsuarios = "SELECT DATE(userDataCadastro) AS dia, COUNT(id) AS novos_usuarios 
-                FROM users WHERE DATE(userDataCadastro) >= CURDATE() - INTERVAL 30 DAY
-                GROUP BY dia ORDER BY dia ASC";
+                FROM users WHERE DATE(userDataCadastro) >= CURDATE() - INTERVAL 30 DAY AND email 
+                IS NOT NULL AND email != '' GROUP BY dia ORDER BY dia ASC";
 $result = $mysqli->query($sqlUsuarios);
 while ($row = $result->fetch_assoc()) {
     $dados[$row['dia']]['novos_usuarios'] = $row['novos_usuarios'];
