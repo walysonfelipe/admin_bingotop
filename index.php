@@ -34,7 +34,7 @@ include_once 'php/functions.php';
         </div>
         <div class="login__container">
             <div class="logo">
-                <img src="assets/images/Logo.png" alt="">
+                <img src="assets/images/logo.png" alt="">
             </div>
             <div class="login">
                 <h1>Entrar</h1>
@@ -50,7 +50,6 @@ include_once 'php/functions.php';
     </main>
     <footer>
     </footer>
-    <script src="assets/js/menu.js"></script>
     <script src="js/login.js"></script>
 </body>
 
