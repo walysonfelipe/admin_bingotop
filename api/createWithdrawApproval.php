@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-ini_set('log_errors', 1);
-error_reporting(E_ALL);
 
 date_default_timezone_set('America/Sao_Paulo');
 
@@ -13,8 +9,6 @@ require_once 'middleware/admin.php';
 
 $session_id = $_COOKIE['session'];
 $uuid = validate_uuid($conn, $session_id);
-
-
 
 if (!$uuid) {
     // Adiciona o registro disso no banco de dados.
