@@ -93,7 +93,7 @@ if ($type == 'accept') {
         $action = "Liberação de saque na plataforma de admin. ID do saque: " . $withdrawId;
         $location = "api/createWithdrawApproval.php";
         $insert_log_sql = "INSERT INTO admin_history VALUES (DEFAULT, ?, ?, ?, NOW())";
-        $insert_log_stmt = $co->prepare($insert_log_sql);
+        $insert_log_stmt = $conn->prepare($insert_log_sql);
         $insert_log_stmt->bind_param(
             "sss",
             $uuid,
