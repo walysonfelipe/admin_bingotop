@@ -11,16 +11,6 @@ require_once 'config/key.php';
 require_once 'services/suitPayService.php';
 require_once 'middleware/admin.php';
 
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
-
-if (preg_match('/^https:\/\/([a-z0-9-]+\.)?bingotop\.com\.br$/', $origin)) {
-    header('Access-Control-Allow-Origin: ' . $origin);
-    header('Access-Control-Allow-Credentials: true');
-    header('Access-Control-Allow-Headers: Content-Type');
-    header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-}
-
-
 $session_id = $_COOKIE['session'];
 $uuid = validate_uuid($conn, $session_id);
 
