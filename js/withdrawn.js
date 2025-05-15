@@ -9,9 +9,6 @@ $('body').on('click', '.process_withdraw', function () {
             $.ajax({
                 type: "POST",
                 url: "../api/createWithdrawApproval.php",
-                xhrFields: {
-                    withCredentials: true
-                },
                 data: {
                     withdrawId: $(this).data('withdrawid'),
                     type: $(this).data('type')
