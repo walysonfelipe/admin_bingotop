@@ -8,7 +8,7 @@ $('body').on('click', '.process_withdraw', function () {
             $(this).prop('disabled', true);
             $.ajax({
                 type: "POST",
-                url: "https://bingotop.com.br/api/createWithdrawApproval.php",
+                url: "../api/createWithdrawApproval.php",
                 xhrFields: {
                     withCredentials: true
                 },
