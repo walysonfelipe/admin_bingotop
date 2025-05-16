@@ -38,7 +38,7 @@ $uuid = bin2hex(random_bytes(16));
 $privileges = 2; // ou outro valor padrão
 
 // Insere o novo usuário
-$insert_sql = "INSERT INTO admin_users (uuid, admin_email, admin_password, admin_priviliges) VALUES (?, ?, ?, ?)";
+$insert_sql = "INSERT INTO admin_users (uid, admin_email, admin_password, admin_priviliges) VALUES (?, ?, ?, ?)";
 $stmt = $mysqli->prepare($insert_sql);
 $stmt->bind_param("ssss", $uuid, $email, $senha_hash, $privileges);
 
