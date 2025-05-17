@@ -14,7 +14,7 @@ function renderSidebarNavigation()
                 <span class="tooltip">Métricas</span>
             </li>
 
-            <li onclick="window.location.href='Saque.php'">
+            <li onclick="window.location.href='saque.php'">
                 <i class="fa-solid fa-money-bill-transfer"></i>
                 <span class="tooltip">Saques (SuitPay)</span>
             </li>
