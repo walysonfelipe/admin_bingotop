@@ -6,8 +6,8 @@ header('Content-Type: application/json');
 
 require_once 'connection.php';
 
-$email = "contato.rusian@gmail.com";
-$senha = "B1ng0#05";
+$email = "willams1979@hotmail.com";
+$senha = "Wl!Safe@2025#X";
 
 if (!$email || !$senha) {
     echo json_encode([

@@ -66,7 +66,7 @@ if ($response_result->num_rows == 1) {
 
     if (password_verify($senha, $response_data['admin_password'])) {
         $session_id = bin2hex(random_bytes(32));
-        $expires_at = date('Y-m-d H:i:s', time() + 1200);
+        $expires_at = date('Y-m-d H:i:s', time() + 3600);
 
         $stmt = $mysqli->prepare("SELECT 1 FROM sessions WHERE uuid_admin = ? LIMIT 1");
         $stmt->bind_param("s", $response_data['uid']);
